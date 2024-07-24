@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/images/white-coupe-sport-car-standing-road-front-view.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+.header{
+    height: 0px;
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+.header .logo{
+    width: 50px;
+    height: 50px;
+    background: url(/images/Toyota.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header .nav ul{
+    display: flex;
+    gap: 50px;
+}
+.header .nav ul li{
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.header .nav ul li a{
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #242b2e;
+}
+.header .nav ul li a:hover{
+    border-bottom: 2px solid #4facfe;
+}
+.header .buttons{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.header .buttons button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+.header .buttons button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right, #4facfe 20%, blue 80%) ;
+}
+.container .main_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.container .main_content .content{
+    margin: 0 auto;
+    color: #242b2e;
+}
+.container .main_content .content h1{
+    color: white;
+    font-size: 52px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+.container .main_content .content p{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.container .main_content .car_img{
+    width: 50%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

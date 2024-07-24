@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 0px;
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}.header .logo{
+    width: 50px;
+    height: 50px;
+    background: url(/images/Toyota.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header .nav ul{
+    display: flex;
+    gap: 50px;
+}
+.header .nav ul li{
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.header .nav ul li a{
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #242b2e;
+}
+.header .nav ul li a:hover{
+    border-bottom: 2px solid #4facfe;
+}
+.header .buttons{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.header .buttons button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+.header .buttons button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right, #4facfe 20%, blue 80%) ;
+}
+
+
+.conteent{
+    background-image: url(/images/alexandru-ivanov-e8o1EP1GeZY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact{
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.text{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+.button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    border: none;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.button:hover{
+    background-color: #45a049;
+}
+.contact-info{
+    text-align: left;
+}
+.contact-info h3{
+    font-size: 43px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.contact-info p{
+    margin-bottom: 10px;
+    color: #333;
+}
+.contact-info i{
+    color: #4caf50;
+    margin-right: 10px;
+}
+@media screen and(max-width: 768px) {
+    .container{
+        padding: 20px;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
